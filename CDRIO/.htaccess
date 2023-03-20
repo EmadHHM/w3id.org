@@ -41,7 +41,9 @@ RewriteRule ^$ https://emadhhm.github.io/ontology.ttl [R=303,L]
 
 RewriteCond %{HTTP_ACCEPT} .+
 RewriteRule ^$ https://emadhhm.github.io/406.html [R=406,L]
+
 # Default response
+# ---------------------------
 RewriteRule ^$ https://emadhhm.github.io/cdrio-ontology [R=303,L]
 
 # Rewrite rule to serve the RDF/XML content from the vocabulary URI by default
